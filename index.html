@@ -2276,21 +2276,21 @@
           padding: 0 8px; /* Adjust padding as needed */
           background-color: #222222;
           color: #969696;
-          border: 1px solid #292929; /* Change to transparent to avoid visual issues */
-          margin-bottom: 8px;
+          border: 1px solid transparent; /* Change to transparent to avoid visual issues */
+          margin-bottom: 4px;
           margin-left: 5px;
           cursor: pointer;
           transition: all 0.4s, color 0.4s;
           user-select: none;
-          border-radius: 8px;
+          border-radius: 10px;
           overflow: hidden;
           min-width: 10px; /* Set a minimum width to prevent overlap */
           max-width: 100px; /* Set a maximum width to prevent excessive stretching */
       }
 
       .tab.active {
-          background-color: #1d1d1d;
-          border: 1px solid #323234;
+          background: linear-gradient(#242424, #272727);
+          border: 1px solid #424244;
           color: #ffffff;
       }
       .tab-title {
@@ -2298,16 +2298,16 @@
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
-          font-size: 12px;
-	  margin-top: 0px;
-	  color: #959595;
-          font-family: 'Rubik', sans-serif;
+          font-size: 12.2px;
+          margin-top: -1px;
+          color: #959595;
+          font-family: 'Noto Sans', sans-serif;
       }
       .tab-title.editing {
-          background: #191919;
+          background: #242424;
           border: 1px solid #424244;
           padding: 2px 8px;
-          border-radius: 5px;
+          border-radius: 6px;
 	  margin-top: -1px;
           margin-left: 8px;
 	  margin-right: 4px;
@@ -2322,11 +2322,11 @@
           width: 16px;
           height: 16px;
           border-radius: 3px;
-          margin-top: 0px;
+          margin-top: -0.5px;
           color: #454545;
       }
       .tab-close:hover {
-        color: #fff;
+        color: #c7c7c7;
       }
       .tab.new-tab {
           min-width: 16px;
@@ -2335,11 +2335,11 @@
           background-color: transparent;
           border: none;
           margin-left: 3px;
-          margin-top: 1.5px;
+          margin-top: -0.5px;
           transition: all 0.3s ease-in-out;
       }
       .tab.new-tab:hover {
-          color: #fff;
+          color: #b7b7b7;
       }
       @keyframes tabAppear {
           from {
